@@ -85,14 +85,6 @@ JOIN customer ON Orders.salesman_id = customer.salesman_id
 JOIN salesman ON Orders.salesman_id = salesman.salesman_id
 WHERE customer.salesman_id = salesman.salesman_id;
 
--- 7. Write a SQL statement to make a join on the tables salesman, 
--- customer and orders in such a form that the same column of each table 
--- will appear once and only the relational rows will come.
--- -- 
-	SELECT *
-FROM Orders
-NATURAL JOIN customer 
-NATURAL JOIN salesman ;
 
 -- 8.. Write a SQL statement to make a list in ascending order for the customer 
 -- who works either through a salesman or by own. 
